@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickLocation.MainPage">
+             
+    
+    
+    <ScrollView>
+    
+        
+      
+
+        <VerticalStackLayout
+            Spacing="60"
+            Padding="30,0"
+            VerticalOptions="Center">
+            
+
+            <Label
+                Text="Welcome To Quick Location"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="40"
+                HorizontalOptions="Center"
+                TextColor="#ED254EFF"/>
+
+
+            <Button
+                x:Name="NewVehicle"
+                FontSize="24"
+                Text="New Vehicle"
+                Clicked="NewVehicleClicked"
+                HorizontalOptions="Center"
+                BorderColor="#260e47"
+                TextColor="#260e47"/>
+
+            <Button
+                x:Name="ViewVehicle"
+                FontSize="24"
+                Text="View Vehicle"
+                Clicked="ViewVehicleClicked"
+                HorizontalOptions="Center"
+                BorderColor="#260e47"
+                TextColor="#260e47"/>
+
+        
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

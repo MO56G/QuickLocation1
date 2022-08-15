@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickLocation.Pages.NewVehicle"
+             Title="NewVehicle">
+    <VerticalStackLayout>
+
+
+        <VerticalStackLayout
+        VerticalOptions="Start"
+                Margin="20, 0, 20, 40"/>
+
+
+        <Label
+                
+            Text="Vehicle Name: "/>
+        <Entry
+            Text="{Binding VehicleName}"
+            Keyboard="Numeric"/>
+        <Label
+                    Text="Description"
+                    FontAttributes="Bold"/>
+        <Editor
+                    HeightRequest="150"
+                    Text="{Binding Description}"
+                    Placeholder="Description"/>
+        <Button
+                x:Name="Save"
+                FontSize="24"
+                Text="Save"
+                Clicked="SaveClicked"
+                HorizontalOptions="Center"
+                BorderColor="#260e47"
+                TextColor="#260e47"/>
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
