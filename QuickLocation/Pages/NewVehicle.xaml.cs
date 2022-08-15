@@ -3,18 +3,12 @@ namespace QuickLocation.Pages;
 public partial class NewVehicle : ContentPage
 {
 	public NewVehicle()
-	{
+    {
+
+        InitializeComponent();
+    }
 
 
-	}
-
-
-    public void SaveClicked(object sender, EventArgs e){
-
-
-
-
-	}
 
 
 
